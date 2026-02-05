@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You Tifi 💖</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- AUDIO -->
+<audio id="loveSound" src="love.mp3"></audio>
+
+<!-- SCREEN 1 -->
+<div id="screen1" class="screen active">
+  <div class="card-btn" onclick="openCard()">
+    <div class="card-btn-inner" id="cardFlip">
+      <div class="card-front">Tap Me 💌</div>
+      <div class="card-back">Hey Cutie! Guess what’s inside? 😘</div>
+    </div>
+  </div>
+</div>
+
+<!-- SCREEN 2 -->
+<div id="screen2" class="screen">
+  <h2>Our Sweet Memories ✨</h2>
+  <p class="screen2-text">Every smile, every hug, every little moment… I treasure it all ❤️</p>
+  <div class="gallery">
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.JPG">
+    <img src="4.jpg">
+    <img src="5.jpg">
+    <img src="6.jpg">
+
+    <!-- 7th image rotated -->
+    <img src="7.jpg" class="rotate180">
+
+    <img src="8.jpg">
+    <img src="9.jpg">
+
+    <!-- 10th image rotated -->
+    <img src="10.jpg" class="rotate180">
+
+    <img src="11.JPG">
+    <img src="12.JPG">
+    <img src="13.JPG">
+    <img src="14.jpg">
+    <img src="15.PNG">
+  </div>
+
+  <button class="primary" onclick="nextScreen()">Next 💘</button>
+</div>
+
+<!-- SCREEN 3 -->
+<div id="screen3" class="screen">
+  <h1>Will You Be Mine Forever? 💗</h1>
+  <div class="btn-row">
+    <button class="primary" id="yesBtn" onclick="yesClicked()">Yes</button>
+  </div>
+  <button class="secondary" id="noBtn">No</button>
+</div>
+
+<!-- SCREEN 4 -->
+<div id="screen4" class="screen">
+  <h1>My heart beats only for you 💖<br>Counting every second till I see you again 😘</h1>
+  <p>I love you Babe ❤️</p>
+</div>
+
+<!-- BIG HEART -->
+<div id="bigHeart" class="big-heart">
+  My heart beats only for you 💖<br>
+  Counting every second till I see you again 😘<br>
+  I love you Babe ❤️
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
